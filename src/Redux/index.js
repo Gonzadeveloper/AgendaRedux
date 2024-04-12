@@ -1,10 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 // reducer
-import users from './slices/users/index'
-
+import usersReducer from './slices/users/index' //aca inportamos nuestra unica slice por ahora 
 
 export default configureStore({
     reducer:{
-        users
+        users: usersReducer,
     }
 })
